@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="birthday.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Geist+Pixel&family=Italianno&family=Lavishly+Yours&family=Ms+Madi&family=Yuyu+Short&display=swap" rel="stylesheet">
+
+      <!-- Canvas Confetti Library for Birthday Celebrations -->
+     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<div>
+    <div class="floating-container" id="floatingContainer"></div>
+
+   <div class="main">
+    <section id="page1" class="page active">
+    
+        <div class="glass">
+                <h1 class="top">Happy Birthday</h1>
+            <h1 class="name">Adrita❤️</h1><br>
+            
+            <p class="mid">Today is all about you, my beautiful Adrita. Every moment with you is a gift, and today I want to bring a little extra magic to your special day.</p>
+            <p class="last">Will you go forward and see your surprise</p>
+        
+            <div class="btn">
+             <button class="yes">Yes</button>
+             <button class="no">No</button>
+            </div>
+           
+        </div>
+    </section>
+    
+    <section id="page2" class="page">
+    <div class="glass">
+
+        <h2 class="st">Close your eyes & make a wish✨</h2>
+        <p class="subtitle">Click the glowing flame to blow out your birthday candle!</p>
+
+        <div class="cake-cont">
+       <div class="candle">
+            <div class="flame" id="flame"></div>
+        </div>
+
+        <div class="caketop"></div>
+         <div class="cakemid"></div>
+         <div class="cakebot"></div>
+
+        </div>
+        
+    <p id="wishmsg" class="wish-msg hidden">
+        Your wish has been made.May it come true🎊;
+    </p>
+
+    <button id="btntopage3" class="btn2 hidden">
+        Continue to Love Letter💌;
+    </button>
+
+    </div>
+    </section>
+
+ <section id="page3" class="page">
+      <div class="glass">
+        <h2>A Letter For You 💌</h2>
+        <p class="subtitle">Tap the envelope to open your message</p>
+
+        <div id="envelopeContainer" class="envelope-wrapper">
+          <div class="envelope-emoji">💌</div>
+        </div>
+
+        <div id="letterCard" class="letter-card hidden">
+          <div id="typewriterText" class="typewriter-body"></div>
+        </div>
+        
+        <br>
+        <button id="btnToPage4" class="btn3 hidden">
+          Explore Our Memories 📸
+        </button>
+      </div>
+    </section>
+
+
+
+   <section id="page4" class="page">
+
+            <div class="allphoto">
+            <div class="photo">
+                 <img src="pic1.jpg" class="img1">
+            </div>
+
+            <div class="photo">
+                 <img src="pic2.jpg" class="img2">
+            </div>
+
+            <div class="photo">
+                 <img src="pic3.jpg" class="img3">
+            </div>
+
+            <div class="photo">
+                 <img src="pic4.jpg" class="img4">
+            </div>
+
+            <div class="photo">
+                 <img src="pic5.jpg" class="img5">
+            </div>
+
+            <div class="photo">
+                 <img src="pic6.jpeg" class="img6">
+            </div>
+            
+        
+            <button id="btnToPage5" class="btn3">
+          How Much Do I Love You? ❤️
+        </button>
+        </div>
+    </section>
+
+     <section id="page5" class="page">
+      <div class="glass">
+        <h2>Measure My Love 💖</h2>
+        <p class="subtitle">Keep clicking the heart to count my love for you!</p>
+
+        <div id="interactiveHeart" class="big-heart">❤️</div>
+        <p id="clickCounterText" class="count-display">Love Level: 0</p>
+        <p id="heartStatusMessage" class="heart-msg">Click me!</p>
+
+        <button id="btnToPage6" class="btn4 hidden">
+          Unwrap Your Gift 🎁
+        </button>
+      </div>
+    </section>
+
+
+    <section id="page6" class="page">
+      <div class="glass">
+        <h2>A Special Gift For You 🎁</h2>
+        <p class="subtitle">Tap the gift box to open it!</p>
+
+        <div id="giftBox" class="gift-box">🎁</div>
+
+        <div id="giftMessage" class="gift-reveal hidden">
+          <h3>Till now,Goloh baby you are my bestest gift🌺</h3>
+          <p>My love, my happiness, and my forever favorite person.</p>
+        </div>
+
+        <button id="btnRestart " class="btn5 hidden">
+          WATCH AGAIN 🔄
+        </button>
+      </div>
+    </section>
+
+
+</div>
+
+    <script src="birthday.js" defer></script>
+</body>
+</html>
